@@ -1,19 +1,26 @@
 {
-    "manifest_version": 3,
-    "name": "Subtitels youtube extension",
-    "version": "1.0",
-    "content_scripts": [{
-        "matches": ["https://*.youtube.com/*"],
-        "css": ["backgroundStyles.css"]
-    }],
-    "description": "Extension to browser to check the translation of YouTube's subtitels.",
-    "action": {
-      "default_popup": "../src/Components/Popup/Popup.html"
-    },
-    "permissions": [
-      "activeTab"
-    ],
-    "background": {
-      "service_worker": "backgroundScript.js"
-    }
-  }   
+	"manifest_version": 3,
+	"name": "Subtitels youtube extension",
+	"version": "1.0",
+	"description": "Extension to browser to check the translation of YouTube's subtitels.",
+
+  "icons": {
+    "16": "public/icons/ccIcon.png",
+    "32": "public/icons/ccIcon.png",
+    "48": "public/icons/ccIcon.png"
+  },
+
+	"content_scripts": [
+		{
+			"matches": ["https://*.youtube.com/*"],
+			"css": ["backgroundStyles.css"]
+		}
+	],
+	"action": {
+		"default_popup": "../src/Components/Popup/Popup.html"
+	},
+	"permissions": ["activeTab"],
+	"background": {
+		"service_worker": "backgroundScript.js"
+	}
+}
