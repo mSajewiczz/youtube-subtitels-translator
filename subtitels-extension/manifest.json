@@ -4,7 +4,7 @@
     "version": "1.0",
     "description": "Extension to browser to check the translation of YouTube's subtitels.",
     "action": {
-      "default_popup": "index.html"
+      "default_popup": "../src/Components/Popup/Popup.html"
     },
     "permissions": [
       "activeTab"
