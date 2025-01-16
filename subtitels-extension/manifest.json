@@ -2,6 +2,10 @@
     "manifest_version": 3,
     "name": "Subtitels youtube extension",
     "version": "1.0",
+    "content_scripts": [{
+        "matches": ["https://*.youtube.com/*"],
+        "css": ["backgroundStyles.css"]
+    }],
     "description": "Extension to browser to check the translation of YouTube's subtitels.",
     "action": {
       "default_popup": "../src/Components/Popup/Popup.html"

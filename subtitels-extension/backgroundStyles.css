@@ -1,0 +1,10 @@
+/*settings of subtitels box on YouTube to change*/ 
+.caption-window
+{
+    pointer-events: visiblefill !important;
+    z-index: 100 !important;
+    cursor: text !important;
+    -webkit-user-select: text !important;
+    user-select: text !important;
+}
+
